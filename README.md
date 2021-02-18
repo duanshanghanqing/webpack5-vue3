@@ -1,6 +1,13 @@
 ## 安装 Webpack 的核心模块以及它的 CLI 模块
-    
-    npm i webpack webpack-cli --save-dev
+    坑：必须是着两个版本，不然报错
+    "webpack": "^5.22.0",
+    "webpack-cli": "^3.3.12",
+    npm i webpack@5.22.0 webpack-cli@3.3.12 --save-dev
+
+    也要用 16 以上的
+    "vue-loader": "^16.1.1",
+    vue-loader依赖 @vue/compiler-sfc
+    "@vue/compiler-sfc": "^3.0.2", 
 
 ## 编译
     npx 是 npm 5.2 以后新增的一个命令，可以用来更方便的执行远程模块或者项目 node_modules 中的 CLI 程序。
@@ -28,14 +35,6 @@
     
     npm install webpack-dev-server --save-dev
 
-    坑：必须是着两个版本，不然报错
-    "webpack": "^4.42.0",
-    "webpack-cli": "3.x",
-
-    也要用 16 以上的
-    "vue-loader": "^16.0.0-rc.1",
-    vue-loader依赖 @vue/compiler-sfc
-    "@vue/compiler-sfc": "^3.0.2",
 
 ## 安装 autoprefixer
     npm i autoprefixer@8.0.0 -D
